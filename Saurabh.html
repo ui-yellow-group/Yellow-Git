@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <html lang="gu">
+<head>
+</head>
+<body>
+
+<h1><b>JavaScript Array Timepass</b></h1>
+
+<p>Click the button.</p>
+<p>  [1,4,5,67,7,8,9,11,110];
+   "hello hello hello students how are you and where are you and  કેમ છો" ;</p>
+
+<h2 id="h2"> Result -  </h2>
+
+<button onclick="alPha()">Arrenge alphabetically</button>
+<button onclick="nuMer()">Arrenge Numerically</button>
+<button onclick="hello()">1st hello</button>
+<button onclick="hello2()">Last hello</button>
+<button onclick="kemcho()">kemcho કેમ છો</button>
+<button onclick="string5()">All String*5</button>
+
+<script>
+var x = [1,4,5,67,7,8,9,11,110];
+var y = "hello hello hello students how are you and where are you and કેમ છો" ;
+
+
+function alPha() {
+  document.getElementById("h2").innerHTML = x.sort();
+  console.log(document.getElementById("h2").innerHTML= x.sort());
+  }
+
+  function nuMer() {
+  document.getElementById("h2").innerHTML = x.sort(function (a,b) {return a-b});
+  console.log(document.getElementById("h2").innerHTML= x.sort ( function (a,b) {return a-b}));
+  }
+
+  function hello() {
+  document.getElementById("h2").innerHTML = y.indexOf("hello");
+  console.log(document.getElementById("h2").innerHTML= y.indexOf(hello));
+  }
+
+  function hello2() {
+  document.getElementById("h2").innerHTML = y.lastIndexOf("hello");
+  console.log(document.getElementById("h2").innerHTML= y.lastindexOf("hello"));
+  }
+
+function kemcho() {
+document.getElementById("h2").innerHTML = y.replace("hello","કેમ છો");
+console.log(document.getElementById("h2").innerHTML= y.replace("કેમ છો"));
+}
+function string5() {
+document.getElementById("h2").innerHTML = y.length*5;
+console.log(document.getElementById("h2").innerHTML= y.length*5());
+}
+
+</script>
+
+</body>
+</html>
+
+
